@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilionaire Diary</title>
+        <!-- Fontawesome CDN -->
+        <script src="https://kit.fontawesome.com/6a3dc81c54.js" crossorigin="anonymous"></script>
+        <!-- Tailwind & Daisy UI CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Tailwind Tamplete -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    bg1:'#0E1B34',
+                    bg2: '#D9D9D9',
+                    bg3: '#FCFAFA',
+                    text1:'#0E1B34',
+                    text2: '#D9D9D9',
+                    text3: '#FCFAFA',
+                  }
+                }
+              }
+            }
+          </script>
+</head>
+<body class="max-h-screen">
+    <main class="grid grid-cols-4">
+        <!-- Left Site Section -->
+        <section class="col-span-1 bg-bg1 p-5 h-screen">
+            <div class="text-center">
+                <h2 class="text-base font-bold text-text2">BILLIONAIRE</h2>
+                <h2 class="text-base font-semibold text-text3">DIARY</h2>
+            </div>
+            <br>
+            <br>
+            <div class="flex flex-col gap-y-3">
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Add a user </button>
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Double Money</button>
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Sort By Rank</button>
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Calculate Entire Wealth</button>
+            </div>
+            <br>
+            <div>
+                <img src="./logo/icons/divider.png" alt="">
+            </div>
+            <br>
+            <div class="flex flex-col gap-y-3">
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Show All Billionaires</button>
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Richest by industry</button>
+                <button class="btn rounded-none text-sm font-bold text-text1 block">Richest by states</button>
+            </div>
+        </section>
+        <!-- Right Site Section -->
+        <section class="col-span-3 h-screen">
+            <!-- Top Container -->
+            <div class="bg-bg3 p-5 flex justify-between items-center">
+                <div>
+                    <input class="bg-bg3 border-b border-black" type="search" name="" id="" placeholder="search">
+                </div>
+                <div>
+                    <img src="./logo/logo1.svg" alt="">
+                </div>
+            </div>
+            <!-- Bottom Container -->
+            <div class="bg-bg2 p-5">
+                <!-- Greetings Hello User -->
+                <div>
+                    <h1 class="text-lg font-black">Hello, User!</h1>
+                </div>
+                <br><br>
+                <!-- Heading Container -->
+                <div class="flex justify-between border-b-2 border-black py-2">
+                    <h1 class="text-base font-black">Person</h1>
+                    <h1 class="text-base font-bold">Citizenship</h1>
+                    <h1 class="text-base font-bold">Industry</h1>
+                    <h1 class="text-base font-bold">Rank</h1>
+                    <h1 class="text-base font-bold">Wealth</h1>
+                </div>
+                <!-- Status Container -->
+                <div class="py-2" id="show-top3">
+
+                </div>
+                <!-- Total Container -->
+                <div class="flex justify-between border-t-2 border-black py-2 ">
+                    <h1 class="text-base font-black">Total</h1>
+                    <h1 class="text-base font-bold">$100000</h1>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="./script/scritp.js"></script>
+</body>
+</html>
